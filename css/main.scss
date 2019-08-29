@@ -28,50 +28,16 @@ body {
   @media only screen and (max-width: 992px) { font-size: 18px; }
 }
 
-
 @import "normalize.css";
 @import "_grid.scss";
 @import "_base.scss";
-@import "_typography.scss";
-
-@import "_header.scss";
-@import "_hero.scss";
-@import "_contents.scss";
-@import "_footer.scss";
 
 //fonts
 @import "../fonts/korolev-heavy-cufonfonts-webfont/style.css";
 @import "../fonts/TheMix-7Bold/styles.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&subset=latin-ext');
 
-.theme-color {
-  background-color: $theme-color;
-  color: white;
-}
-
-.theme-color-second {
-  background-color: $theme-color-second;
-  color: white;
-}
-
-section .title-section {
-  margin-bottom: 40px;
-  font-size: 60px;
-  font-weight: bold;
-  color: $theme-color;
-  @media only screen and (max-width: 1200px) {
-    font-size: 46px;
-  }
-  @media only screen and (max-width: 992px) {
-    font-size: 38px;
-  }
-  @media only screen and (max-width: 768px) {
-    font-size: 34px;
-  }
-}
-
-.hide-mobile {
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-}
+@import "_header.scss";
+@import "_hero.scss";
+@import "_contents.scss";
+@import "_footer.scss";
