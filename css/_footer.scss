@@ -1,0 +1,80 @@
+.main-footer {
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+  .footer-nav {
+    margin-bottom: 50px;
+  }
+  .nav-list {
+    display: inline;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 769px) {
+      display: block;
+    }
+    @media only screen and (min-width: 770px) {
+      &:first-child li:last-child:after {
+        display: inline;
+      }
+    }
+    li {
+      display: inline-block;
+      &:after {
+        content: "|";
+        position: absolute;
+      }
+      &:last-child:after {
+        display: none;
+      }
+      a {
+        font-size: 28px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 15px;
+        &:hover {
+          text-decoration: underline;
+        }
+        @media only screen and (max-width: 1200px) {
+          font-size: 24px;
+        }
+        @media only screen and (max-width: 992px) {
+          font-size: 16px;
+        }
+        @media only screen and (max-width: 769px) {
+          padding: 10px;
+        }
+      }
+    }
+    .top-link {
+      background: url("../img/home/up-icon.png") no-repeat 0% 50%;
+      a {
+        padding-left: 30px;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 769px) {
+        display: block;
+        background: url("../img/home/up-icon.png") no-repeat 50% 0%;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        a {
+          padding: 20px 10px 10px 10px;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .trivita-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .copyright-text {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    @media only screen and (max-width: 992px) {
+      font-size: 12px;
+    }
+  }
+}
