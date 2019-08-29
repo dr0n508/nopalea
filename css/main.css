@@ -144,6 +144,123 @@ img {
       color: white;
       border-color: white; }
 
+.hero-block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 90px; }
+  .hero-block:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+  @media only screen and (max-width: 992px) {
+    .hero-block:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 2; }
+    .hero-block .big-nopalea-logo img {
+      max-width: 500px; } }
+  .hero-block .hero-content {
+    position: relative;
+    z-index: 3;
+    width: 65%;
+    padding: 60px 0 120px; }
+    .hero-block .hero-content h1 {
+      font-size: 78px;
+      text-transform: uppercase;
+      font-family: 'Korolev Heavy', sans-serif;
+      margin: 20px 0;
+      color: #6c0038; }
+    .hero-block .hero-content .sub-title {
+      font-size: 41px;
+      font-family: 'Korolev Medium', sans-serif;
+      margin-bottom: 80px;
+      color: #6c0038; }
+  @media only screen and (min-width: 1681px) {
+    .hero-block .hero-content {
+      padding: 150px 0 200px; } }
+  @media only screen and (max-width: 1200px) {
+    .hero-block .hero-content h1 {
+      font-size: 50px; }
+    .hero-block .hero-content .sub-title {
+      font-size: 32px; } }
+  @media only screen and (max-width: 992px) {
+    .hero-block .hero-content {
+      width: 100%; } }
+  @media only screen and (max-width: 768px) {
+    .hero-block .big-nopalea-logo img {
+      width: 300px;
+      max-width: 100%; } }
+  @media only screen and (max-width: 450px) {
+    .hero-block .hero-content {
+      padding: 25px 0 50px; }
+      .hero-block .hero-content h1 {
+        font-size: 40px; }
+      .hero-block .hero-content .sub-title {
+        font-size: 24px; } }
+
+.hero-block.hero-home {
+  background-position: 100% 50%;
+  background-image: url("../img/home/intro-img.jpg"); }
+  @media only screen and (max-width: 768px) {
+    .hero-block.hero-home {
+      background-position: 90% 50%; } }
+  @media only screen and (max-width: 450px) {
+    .hero-block.hero-home {
+      background-position: 85% 50%; } }
+
+.hero-block.hero-science {
+  background-position: 100% 50%;
+  background-image: url("../img/science/intro-science-img.jpg"); }
+  .hero-block.hero-science .hero-content h1 {
+    font-size: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 50px; }
+  @media only screen and (max-width: 768px) {
+    .hero-block.hero-science .hero-content h1 {
+      margin-bottom: 30px; } }
+
+.hero-block.hero-product {
+  background-position: 100% 50%;
+  background-image: url("../img/product/intro-product-img.jpg"); }
+  .hero-block.hero-product .hero-content {
+    width: 50%; }
+    .hero-block.hero-product .hero-content h1 {
+      font-size: 55px; }
+    .hero-block.hero-product .hero-content .sub-title {
+      font-size: 32px;
+      margin-bottom: 50px; }
+  @media only screen and (max-width: 992px) {
+    .hero-block.hero-product .hero-content {
+      width: 65%; } }
+  @media only screen and (max-width: 768px) {
+    .hero-block.hero-product {
+      background-position: 80% 50%; }
+      .hero-block.hero-product .hero-content {
+        width: 100%; }
+        .hero-block.hero-product .hero-content .sub-title {
+          margin-bottom: 30px; } }
+  @media only screen and (max-width: 450px) {
+    .hero-block.hero-product .hero-content .sub-title {
+      font-size: 24px; } }
+
 .text-center {
   text-align: center; }
 
@@ -364,123 +481,6 @@ section .title-section {
 @media only screen and (max-width: 768px) {
   .hide-mobile {
     display: none; } }
-
-.hero-block {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding-top: 90px; }
-  .hero-block:before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 90px;
-    z-index: 2;
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
-  @media only screen and (max-width: 992px) {
-    .hero-block:after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.5);
-      z-index: 2; }
-    .hero-block .big-nopalea-logo img {
-      max-width: 500px; } }
-  .hero-block .hero-content {
-    position: relative;
-    z-index: 3;
-    width: 65%;
-    padding: 60px 0 120px; }
-    .hero-block .hero-content h1 {
-      font-size: 78px;
-      text-transform: uppercase;
-      font-family: 'Korolev Heavy', sans-serif;
-      margin: 20px 0;
-      color: #6c0038; }
-    .hero-block .hero-content .sub-title {
-      font-size: 41px;
-      font-family: 'Korolev Medium', sans-serif;
-      margin-bottom: 80px;
-      color: #6c0038; }
-  @media only screen and (min-width: 1681px) {
-    .hero-block .hero-content {
-      padding: 150px 0 200px; } }
-  @media only screen and (max-width: 1200px) {
-    .hero-block .hero-content h1 {
-      font-size: 50px; }
-    .hero-block .hero-content .sub-title {
-      font-size: 32px; } }
-  @media only screen and (max-width: 992px) {
-    .hero-block .hero-content {
-      width: 100%; } }
-  @media only screen and (max-width: 768px) {
-    .hero-block .big-nopalea-logo img {
-      width: 300px;
-      max-width: 100%; } }
-  @media only screen and (max-width: 450px) {
-    .hero-block .hero-content {
-      padding: 25px 0 50px; }
-      .hero-block .hero-content h1 {
-        font-size: 40px; }
-      .hero-block .hero-content .sub-title {
-        font-size: 24px; } }
-
-.hero-block.hero-home {
-  background-position: 100% 50%;
-  background-image: url("../img/home/intro-img.jpg"); }
-  @media only screen and (max-width: 768px) {
-    .hero-block.hero-home {
-      background-position: 90% 50%; } }
-  @media only screen and (max-width: 450px) {
-    .hero-block.hero-home {
-      background-position: 85% 50%; } }
-
-.hero-block.hero-science {
-  background-position: 100% 50%;
-  background-image: url("../img/science/intro-science-img.jpg"); }
-  .hero-block.hero-science .hero-content h1 {
-    font-size: 50px;
-    font-family: "Roboto Condensed", sans-serif;
-    margin-bottom: 50px; }
-  @media only screen and (max-width: 768px) {
-    .hero-block.hero-science .hero-content h1 {
-      margin-bottom: 30px; } }
-
-.hero-block.hero-product {
-  background-position: 100% 50%;
-  background-image: url("../img/product/intro-product-img.jpg"); }
-  .hero-block.hero-product .hero-content {
-    width: 50%; }
-    .hero-block.hero-product .hero-content h1 {
-      font-size: 55px; }
-    .hero-block.hero-product .hero-content .sub-title {
-      font-size: 32px;
-      margin-bottom: 50px; }
-  @media only screen and (max-width: 992px) {
-    .hero-block.hero-product .hero-content {
-      width: 65%; } }
-  @media only screen and (max-width: 768px) {
-    .hero-block.hero-product {
-      background-position: 80% 50%; }
-      .hero-block.hero-product .hero-content {
-        width: 100%; }
-        .hero-block.hero-product .hero-content .sub-title {
-          margin-bottom: 30px; } }
-  @media only screen and (max-width: 450px) {
-    .hero-block.hero-product .hero-content .sub-title {
-      font-size: 24px; } }
 
 .product-block {
   padding: 60px 0; }
